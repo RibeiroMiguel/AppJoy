@@ -3,13 +3,9 @@ import 'package:flutter/material.dart';
 class JoyStickR extends StatelessWidget {
   @override
 Widget build(BuildContext context) {
-  return new Scaffold(
-    //appBar: new AppBar(
-      //title: new Text('App Name'),
-      //),
-   body: Center(
+  return new Center(
       child: new Row(
-        mainAxisAlignment: MainAxisAlignment.end,
+        //mainAxisAlignment: MainAxisAlignment.end,
         //mainAxisSize: MainAxisSize.min,
         //crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -22,7 +18,7 @@ Widget build(BuildContext context) {
                   key: null,
                   onPressed: buttonPressed,
                   color: Colors.black,
-                  icon: Icon(Icons.arrow_upward)),
+                  icon: Icon(Icons.change_history)),
               new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
@@ -32,7 +28,7 @@ Widget build(BuildContext context) {
                         key: null,
                         onPressed: buttonPressed,
                         color: Colors.black,
-                        icon: Icon(Icons.arrow_back)),
+                        icon: Icon(Icons.crop_din)),
                     new IconButton(
                         key: null,
                         //onPressed: buttonPressed,
@@ -42,7 +38,7 @@ Widget build(BuildContext context) {
                         key: null,
                         onPressed: buttonPressed,
                         color: Colors.black,
-                        icon: Icon(Icons.arrow_forward))
+                        icon: Icon(Icons.panorama_fish_eye))
                   ]),
               new Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -53,11 +49,11 @@ Widget build(BuildContext context) {
                         key: null,
                         onPressed: buttonPressed,
                         color: Colors.black,
-                        icon: Icon(Icons.arrow_downward)),
+                        icon: Icon(Icons.close)),
                   ]),
             ]),
       ]),
-    ));
+    );
   }
 }
 

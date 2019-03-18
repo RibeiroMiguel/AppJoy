@@ -3,18 +3,10 @@ import 'package:flutter/material.dart';
 class JoyStickL extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-        //appBar: new AppBar(
-        //title: new Text('App Name'),
-        //),
-        body: Center(
-      child: new Row(
-        //mainAxisAlignment: MainAxisAlignment.end,
-        //mainAxisSize: MainAxisSize.min,
-        //crossAxisAlignment: CrossAxisAlignment.center,
+    return new Row(
         children: <Widget>[
         new Column(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
@@ -56,8 +48,7 @@ class JoyStickL extends StatelessWidget {
                         icon: Icon(Icons.arrow_downward)),
                   ]),
             ]),
-      ]),
-    ));
+        ]);
   }
 }
 

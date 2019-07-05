@@ -6,8 +6,8 @@ class JoyStickL extends StatelessWidget {
     return new Row(
         children: <Widget>[
         new Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.end,
+            //mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               new IconButton(

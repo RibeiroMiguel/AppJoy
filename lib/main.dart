@@ -19,9 +19,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'fluter demo',
+        title: 'Flames controller',
+        theme: ThemeData(
+          primaryColor: Colors.red
+        ),
+        color: Colors.black,
         home: new Scaffold(
-            body: MainPage()
+          appBar: new AppBar(
+            title: new Text('Universal JoyStick'),
+            centerTitle: true,
+          ),
+            body:
+            MainPage()
             ));
   }
 }
